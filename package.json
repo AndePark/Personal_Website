@@ -1,1 +1,24 @@
-{}
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "Andrew Park's Personal Portfolio - React frontend with Express backend",
+  "main": "server/server.js",
+  "engines": {
+    "node": "20.x"
+  },
+  "scripts": {
+    "start": "node server/server.js",
+    "client-install": "cd client && npm install",
+    "client-build": "cd client && npm run build",
+    "postinstall": "npm run client-install && npm run client-build"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.4"
+  },
+  "devDependencies": {},
+  "author": "Andrew Park",
+  "license": "MIT"
+}
