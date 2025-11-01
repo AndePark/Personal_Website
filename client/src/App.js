@@ -6,6 +6,18 @@ export default function App() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [formStatus, setFormStatus] = useState('');
 
+  // Change Images Based on Time of Day
+  const getTimeOfDayImage = () => {
+    const hour = new Date().getHours();
+
+    if (hour >= 6 && hour < 12) return '/images/morning.jpg';
+    if (hour >= 12 && hour < 18) return '/images/afternoon.jpg';
+    if (hour >= 18 && hour < 21) return '/images/evening.jpg';
+    return '/images/night.jpg';
+  };
+
+  const [heroImage, setHeroImage] = useState(getTimeOfDayImage());
+
 
   // Jumps to Section when Clicked from NavBar (smooth)  
   const scrollToSection = (id) => {
@@ -157,6 +169,11 @@ export default function App() {
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">
+        <img
+          src={heroImage}
+          alt="Hero Background"
+          className="absolute inset-0 w-full h-full object-cover opacity-30"
+        />
         <div className="max-w-6xl mx-auto">
           <div className="space-y-6">
             <h2 className="text-5xl md:text-7xl font-bold">
@@ -187,7 +204,7 @@ export default function App() {
       {/* About Section */}
       <section id="about" className="py-20 px-6 bg-slate-800/50">
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-3xl md:text-4xl font-bold mb-8">ABOUT ME</h3>
+          <h3 className="text-3xl md:text-4xl font-bold mb-8">About Me</h3>
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-4 text-slate-300">
               <p className="text-lg leading-relaxed">
@@ -228,7 +245,7 @@ export default function App() {
       {/* Experience Section */}
       <section id="experience" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-3xl md:text-4xl font-bold mb-12">EXPERIENCE</h3>
+          <h3 className="text-3xl md:text-4xl font-bold mb-12">Experience</h3>
           <div className="space-y-8">
             {experience.map((job, index) => (
               <div key={index} className="bg-slate-800/50 rounded-lg p-6 hover:bg-slate-800/70 transition-colors border border-slate-700">
@@ -256,7 +273,7 @@ export default function App() {
       {/* Projects Section */}
       <section id="projects" className="py-20 px-6 bg-slate-800/50">
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-3xl md:text-4xl font-bold mb-12">PROJECTS</h3>
+          <h3 className="text-3xl md:text-4xl font-bold mb-12">Projects</h3>
           <div className="grid md:grid-cols-2 gap-6">
             {projects.map((project, index) => (
               <div key={index} className="bg-slate-900/50 rounded-lg p-6 hover:transform hover:scale-105 transition-all border border-slate-700">

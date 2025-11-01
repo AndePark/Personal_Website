@@ -14,7 +14,7 @@
 ## 🏗️ Tech Stack
 
 **Frontend**
-- React (Vite or CRA)
+- React
 - Tailwind CSS
 - Lucide React Icons
 
