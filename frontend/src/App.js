@@ -184,10 +184,17 @@ export default function App() {
               with experience building scalable web applications and data pipelines.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
-              <a href="mailto:andrewpark2396@gmail.com" className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition-colors">
+              {/* <a href="mailto:andrewpark2396@gmail.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition-colors">
                 <Mail size={20} />
                 Get in Touch
-              </a>
+              </a> */}
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition-colors"
+              >
+                <Mail size={20} />
+                Get in Touch
+              </button>
               <a href="https://www.github.com/AndePark" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-slate-700 hover:bg-slate-600 px-6 py-3 rounded-lg transition-colors">
                 <Github size={20} />
                 GitHub
