@@ -128,7 +128,7 @@ export default function App() {
               Andrew Park
             </h1>
             
-            {/* Desktop Menu */}
+            Desktop Menu
             <div className="hidden md:flex space-x-8">
               {['about', 'experience', 'projects', 'contact'].map((item) => (
                 <button
@@ -172,7 +172,7 @@ export default function App() {
         <img
           src={heroImage}
           alt="Hero Background"
-          className="absolute inset-0 w-full h-full object-cover opacity-30"
+          className="absolute inset-0 w-full h-full object-cover opacity-30 pointer-events-none"
         />
         <div className="max-w-6xl mx-auto">
           <div className="space-y-6">
@@ -188,11 +188,11 @@ export default function App() {
                 <Mail size={20} />
                 Get in Touch
               </a>
-              <a href="https://github.com/andepark" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-slate-700 hover:bg-slate-600 px-6 py-3 rounded-lg transition-colors">
+              <a href="https://www.github.com/AndePark" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-slate-700 hover:bg-slate-600 px-6 py-3 rounded-lg transition-colors">
                 <Github size={20} />
                 GitHub
               </a>
-              <a href="https://linkedin.com/in/andepark" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-slate-700 hover:bg-slate-600 px-6 py-3 rounded-lg transition-colors">
+              <a href="https://www.linkedin.com/in/andepark/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-slate-700 hover:bg-slate-600 px-6 py-3 rounded-lg transition-colors">
                 <Linkedin size={20} />
                 LinkedIn
               </a>
