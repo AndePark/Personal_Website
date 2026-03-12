@@ -168,7 +168,7 @@ export default function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-10 px-6">
+      <section className="pt-32 pb-6 px-6">
         <img
           src={heroImage}
           alt="Hero Background"
