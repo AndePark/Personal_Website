@@ -91,22 +91,22 @@ export default function App() {
   const experience = [
     {
       company: "Ocean Networks Canada",
-      role: "Software Engineer Intern",
+      role: "Software Engineer",
       period: "May 2023 – Dec 2023",
       highlights: [
-        "Refactored 3 legacy webpages using React/TypeScript, reducing navigation clicks from 5 to 2",
-        "Increased data capture rate by 30% through full-stack dashboard with React/Python",
-        "Migrated NoSQL to relational database with ETL pipeline, improving data persistence by 20%"
+        "Improved backend data workflows and processing logic serving 3 legacy React (TypeScript) pages, cutting response time 60% (5s → 2s) and enabling faster filtering and navigation",
+        "Increased data throughput 30% and testing efficiency 70% by building a Python backend with real-time streaming, async processing, and optimized queries, integrated with automated E2E tests",
+        "Improved data analysis 20% and cut API testing time 30% by leading a NoSQL-to-relational migration with ETL pipelines and Postman automation"
       ]
     },
     {
       company: "NETGEAR",
-      role: "Software Engineer Intern",
+      role: "Software Development Engineer in Test",
       period: "Sept 2022 – April 2023",
       highlights: [
-        "Automated manual tests with Python scripts, achieving 45% faster testing turnover",
-        "Reduced testing efforts from 2-5 minutes through automation while ensuring repeatability",
-        "Documented and verified software defects for efficient issue resolution"
+        "Reduced test turnaround time by 45% by developing Python-based automation to replace manual testing",
+        "Cut testing time from 5 to 2 minutes by acting as POC to define requirements and automating manual tests for repeatability",
+        "Streamlined defect triage by reproducing, documenting, and validating software issues and bug fixes"
       ]
     }
   ];
