@@ -208,7 +208,7 @@ export default function App() {
         </div>
       </section>
       {/* About Section */}
-      <section id="about" className="py-20 px-6 bg-slate-800/50">
+      <section id="about" className="py-12 px-6 bg-slate-800/50">
         <div className="max-w-6xl mx-auto">
           <h3 className="text-3xl md:text-4xl font-bold mb-8">About Me</h3>
           <div className="grid md:grid-cols-2 gap-12">
