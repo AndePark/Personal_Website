@@ -168,7 +168,7 @@ export default function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6">
+      <section className="pt-32 pb-10 px-6">
         <img
           src={heroImage}
           alt="Hero Background"
@@ -207,7 +207,6 @@ export default function App() {
           </div>
         </div>
       </section>
-
       {/* About Section */}
       <section id="about" className="py-20 px-6 bg-slate-800/50">
         <div className="max-w-6xl mx-auto">
