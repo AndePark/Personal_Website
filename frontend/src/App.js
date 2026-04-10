@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X, Github, Linkedin, Mail, Phone, ExternalLink, ChevronRight, Link} from 'lucide-react';
-import StarfieldBackground from './StarfieldBackground';
+import StarfieldBackground from './components/StarfieldBackground';
+import BackgroundBeams from './components/BackgroundBeams';
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -121,8 +122,9 @@ export default function App() {
 
   return (
     <>
-    <StarfieldBackground />
-    <div className="relative bg-transparent min-h-screen text-white">
+    {/* <BackgroundBeams/> */}
+    <StarfieldBackground/>
+    <div className="relative z-10 min-h-screen text-white">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-slate-900/80 backdrop-blur-md z-50 border-b border-slate-700">
         <div className="max-w-6xl mx-auto px-6 py-4">
