@@ -96,9 +96,10 @@ export default function App() {
       role: "Software Engineer",
       period: "May 2023 – Dec 2023",
       highlights: [
-        "Improved backend data workflows and processing logic serving 3 legacy React (TypeScript) pages, cutting response time 60% (5s → 2s) and enabling faster filtering and navigation",
-        "Increased data throughput 30% and testing efficiency 70% by building a Python backend with real-time streaming, async processing, and optimized queries, integrated with automated E2E tests",
-        "Improved data analysis 20% and cut API testing time 30% by leading a NoSQL-to-relational migration with ETL pipelines and Postman automation"
+        "Improved backend data processing serving 3 production applications, cutting response time 60% (5s → 2s) and enabling faster data retrieval and analysis",
+        "Delivered React-based web applications and backend services supporting field engineers, contributing to the technical development of a new water sensor capable of measuring temperature, salinity, and dissolved oxygen in a single system",
+        "Implemented asynchronous processing and real-time streaming workflows, increasing system throughput 30% and improving testing efficiency 70%",
+        "Automated ETL pipelines and API workflows during a NoSQL-to-relational database migration, improving data analysis efficiency 20% and reducing manual testing effort 30%"
       ]
     },
     {
@@ -106,9 +107,9 @@ export default function App() {
       role: "Software Development Engineer in Test",
       period: "Sept 2022 – April 2023",
       highlights: [
-        "Reduced test turnaround time by 45% by developing Python-based automation to replace manual testing",
-        "Cut testing time from 5 to 2 minutes by acting as POC to define requirements and automating manual tests for repeatability",
-        "Streamlined defect triage by reproducing, documenting, and validating software issues and bug fixes"
+        "Led software testing for the first release of NETGEAR wireless hotspots for European markets, developing Python automation that reduced regression testing time 45%",
+        "Investigated and resolved network connectivity issues involving TCP/IP, IP addressing, packet communication, and device-to-device networking",
+        "Established reproducible test cases, analyzed system failures, and partnered with developers to validate fixes and improve product quality"
       ]
     }
   ];
