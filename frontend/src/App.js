@@ -61,32 +61,40 @@ export default function App() {
 
   const projects = [
     {
+      title: "OTC Drug Assistant",
+      description: "Rule-based medication recommendation engine that maps user symptoms and medical exceptions against structured JSON datasets, with Next.js/React web and Expo/React Native iOS apps. Includes allergy and safety filtering, expanded contraindication logic, and a live Health Canada drug API.",
+      tech: ["Next.js", "React", "React Native", "Expo", "JSON", "Health Canada API"],
+      link: "https://github.com/AndePark/Drug-Assistant"
+    },
+    {
       title: "Mini Casino",
-      period: "March 2025 – April 2025",
       description: "Full stack web-based casino application with Spring Boot backend and React frontend, featuring user authentication, betting system, and persistent account management.",
       tech: ["Spring Boot", "React", "PostgreSQL"], 
       link: "https://github.com/AndePark/Casino"
     },
     {
       title: "Spotify Image AI",
-      period: "April 2024 – Sept 2024",
       description: "Spotify playlist cover image generator using OpenAI's DALL-E 2 API to create dynamic artwork based on audio features like danceability, energy, and tempo.",
       tech: ["Express", "React", "OpenAI API"],
       link: "https://github.com/AndePark/Spotify-Image-AI"
     },
     {
       title: "Code Comprehension Tutor",
-      period: "May 2024 – Aug 2024",
       description: "Web application for assessing code comprehension using Ollama LLM to generate code from plain English explanations with functional equivalence testing.",
       tech: ["React", "TypeScript", "Ollama", "Docker"],
       link: "https://github.com/AndePark/LLM-Tutor"
     },
     {
       title: "Grocery Store Price Tracker",
-      period: "March 2024",
       description: "Application for managing grocery lists with real-time price comparisons across grocery stores in the UBC area.",
       tech: ["Express", "React", "MongoDB"],
       link: "https://github.com/AndePark/Grocery-Store-Picker"
+    },
+    {
+      title: "The Investment Portfolio",
+      description: "Java-based investment portfolio tracker that organizes multiple purchases of the same stock into per-lot records, supporting individual-level buying, selling, and querying. Includes partial-share selling, real-time gain/loss calculations, file-based persistence, and event logging.",
+      tech: ["Java", "File I/O", "Object-Oriented Programming"],
+      link: "https://github.com/AndePark/Investment-Application/tree/main/project_l1o8k-master"
     }
   ];
 
@@ -115,10 +123,10 @@ export default function App() {
   ];
 
   const skills = {
-    "Languages": ["Java", "Python", "C/C++", "TypeScript", "JavaScript", "SQL", "HTML", "CSS"],
-    "Frameworks": ["React", "Node.js", "Express.js", "Spring Boot"],
-    "Tools": ["Docker", "Kubernetes", "AWS", "Git", "Cypress", "Postman"],
-    "Databases": ["PostgreSQL", "MySQL", "MongoDB"]
+    "Languages": ["Java", "Python", "TypeScript", "JavaScript", "SQL", "HTML", "CSS"],
+    "Frameworks & Libraries": ["React", "Node.js", "Express.js", "Spring Boot", "Pandas", "NumPy", "Scikit-Learn"],
+    "Cloud, Databases & Testing": ["AWS", "Docker", "PostgreSQL", "MySQL", "MongoDB", "JUnit", "Pytest", "Selenium", "Cypress", "Postman"],
+    "Developer & AI Tools" : ["JIRA", "Confluence", "Claude", "ChatGPT", "Cursor", "GitHub Copilot"]
   };
 
   return (
