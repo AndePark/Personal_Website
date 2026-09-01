@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const nodemailer = require('nodemailer');
+const { Resend } = require('resend');
 const path = require('path');
 require('dotenv').config();
 
@@ -14,14 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 // Serve React frontend
 app.use(express.static(path.join(__dirname, '../frontend/build')));
 
-// Nodemailer transporter
-const transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS
-  }
-});
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 // Contact form endpoint
 app.post('/api/contact', async (req, res) => {
@@ -37,9 +30,10 @@ app.post('/api/contact', async (req, res) => {
       return res.status(400).json({ success: false, message: 'Invalid email format' });
     }
 
-    const mailOptions = {
-      from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_USER,
+    // Notification email to you
+    const { error: notifyError } = await resend.emails.send({
+      from: 'onboarding@resend.dev',
+      to: process.env.EMAIL_TO,
       replyTo: email,
       subject: `Portfolio Contact: Message from ${name}`,
       html: `
@@ -55,12 +49,19 @@ app.post('/api/contact', async (req, res) => {
           </div>
         </div>
       `
-    };
+    });
 
-    await transporter.sendMail(mailOptions);
+    if (notifyError) {
+      console.error('Error sending notification email:', notifyError);
+      return res.status(500).json({ success: false, message: 'Failed to send message. Please try again later.' });
+    }
 
-    const confirmationEmail = {
-      from: process.env.EMAIL_USER,
+    // Confirmation email to the visitor — only works for real visitors once
+    // you've verified your own domain in Resend. Until then this will
+    // silently fail for anyone but your own Resend account email, so we
+    // don't let it block the success response.
+    const { error: confirmError } = await resend.emails.send({
+      from: 'onboarding@resend.dev',
       to: email,
       subject: 'Thanks for reaching out!',
       html: `
@@ -75,9 +76,11 @@ app.post('/api/contact', async (req, res) => {
           </p>
         </div>
       `
-    };
+    });
 
-    await transporter.sendMail(confirmationEmail);
+    if (confirmError) {
+      console.warn('Confirmation email not sent (expected until domain is verified):', confirmError);
+    }
 
     res.status(200).json({ success: true, message: 'Message sent successfully!' });
   } catch (error) {
