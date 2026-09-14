@@ -74,25 +74,25 @@ export default function App() {
     },
     {
       title: "Mini Casino",
-      description: "Full stack web-based casino application with Spring Boot backend and React frontend, featuring user authentication, betting system, and persistent account management.",
+      description: "Full-stack casino simulation platform with a Spring Boot REST API and React frontend, featuring secure user authentication, a real-time betting engine across multiple game types, and persistent PostgreSQL-backed account balances and transaction history.",
       tech: ["Spring Boot", "React", "PostgreSQL"], 
       link: "https://github.com/AndePark/Casino"
     },
     {
       title: "Spotify Image AI",
-      description: "Spotify playlist cover image generator using OpenAI's DALL-E 2 API to create dynamic artwork based on audio features like danceability, energy, and tempo.",
+      description: "AI-powered playlist cover generator that pulls audio features (danceability, energy, tempo) from the Spotify Web API and feeds them into OpenAI's DALL-E 2 to produce dynamic, mood-matched artwork for any user playlist.",
       tech: ["Express", "React", "OpenAI API"],
       link: "https://github.com/AndePark/Spotify-Image-AI"
     },
     {
       title: "Code Comprehension Tutor",
-      description: "Web application for assessing code comprehension using Ollama LLM to generate code from plain English explanations with functional equivalence testing.",
+      description: "Interactive learning tool that evaluates a user's code comprehension by having them describe a snippet in plain English, then uses a locally-hosted Ollama LLM to regenerate code from that description and verify functional equivalence against the original.",
       tech: ["React", "TypeScript", "Ollama", "Docker"],
       link: "https://github.com/AndePark/LLM-Tutor"
     },
     {
       title: "Grocery Store Price Tracker",
-      description: "Application for managing grocery lists with real-time price comparisons across grocery stores in the UBC area.",
+      description: "Full-stack grocery list manager that aggregates and compares real-time prices across multiple stores in the UBC area, helping users build shopping lists optimized for the lowest total cost.",
       tech: ["Express", "React", "MongoDB"],
       link: "https://github.com/AndePark/Grocery-Store-Picker"
     },
