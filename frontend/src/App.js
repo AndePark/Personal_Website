@@ -61,10 +61,16 @@ export default function App() {
 
   const projects = [
     {
-      title: "OTC Drug Assistant",
+      title: "Someday, Us",
+      description: "Native SwiftUI iOS app enabling paired users to share and manage a synced to-do list, with Firebase Authentication for account management and a 6-character invite-code system for linking couple accounts. Includes a Firestore (NoSQL) data model with security rules restricting access to authenticated couple members, and WidgetKit home-screen extensions for at-a-glance list access.",
+      tech: ["SwiftUI", "Firebase", "Firestore", "WidgetKit"],
+      link: "https://github.com/AndePark/Someday-Us"
+    },
+    {
+      title: "PharmaPal",
       description: "Rule-based medication recommendation engine that maps user symptoms and medical exceptions against structured JSON datasets, with Next.js/React web and Expo/React Native iOS apps. Includes allergy and safety filtering, expanded contraindication logic, and a live Health Canada drug API.",
       tech: ["Next.js", "React", "React Native", "Expo", "JSON", "Health Canada API"],
-      link: "https://github.com/AndePark/Drug-Assistant"
+      link: "https://github.com/AndePark/PharmaPal"
     },
     {
       title: "Mini Casino",
