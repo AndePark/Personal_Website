@@ -105,6 +105,15 @@ export default function App() {
   ];
 
   const experience = [
+     {
+      company: "Symbols Multisensory Learning Center",
+      role: "OG Tutor",
+      period: "July 2025",
+      highlights: [
+        "Deliver individualized math and English lessons to students with learning challenges such as ADHD and autism, adapting teaching methods and materials to each student's sensory and cognitive needs",
+        "Identified a gap in existing learning apps through conversations with parents, who noted most tools aren't designed for neurodivergent learners; in the design and initial build phase of a tablet-based app, testing iteratively with consenting parents and students as features evolve"
+      ]
+    },
     {
       company: "Ocean Networks Canada",
       role: "Software Engineer",
@@ -114,15 +123,6 @@ export default function App() {
         "Delivered React-based web applications and backend services supporting field engineers, contributing to the technical development of a new water sensor capable of measuring temperature, salinity, and dissolved oxygen in a single system",
         "Implemented asynchronous processing and real-time streaming workflows, increasing system throughput 30% and improving testing efficiency 70%",
         "Automated ETL pipelines and API workflows during a NoSQL-to-relational database migration, improving data analysis efficiency 20% and reducing manual testing effort 30%"
-      ]
-    },
-    {
-      company: "Symbols Multisensory Learning Center",
-      role: "OG Tutor",
-      period: "July 2025",
-      highlights: [
-        "Deliver individualized math and English lessons to students with learning challenges such as ADHD and autism, adapting teaching methods and materials to each student's sensory and cognitive needs",
-        "Identified a gap in existing learning apps through conversations with parents, who noted most tools aren't designed for neurodivergent learners; in the design and initial build phase of a tablet-based app, testing iteratively with consenting parents and students as features evolve"
       ]
     },
     {
