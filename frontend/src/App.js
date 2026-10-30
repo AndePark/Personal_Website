@@ -117,6 +117,15 @@ export default function App() {
       ]
     },
     {
+      company: "Symbols Multisensory Learning Center",
+      role: "OG Tutor",
+      period: "July 2025",
+      highlights: [
+        "Deliver individualized math and English lessons to students with learning challenges such as ADHD and autism, adapting teaching methods and materials to each student's sensory and cognitive needs",
+        "Identified a gap in existing learning apps through conversations with parents, who noted most tools aren't designed for neurodivergent learners; in the design and initial build phase of a tablet-based app, testing iteratively with consenting parents and students as features evolve"
+      ]
+    },
+    {
       company: "NETGEAR",
       role: "Software Development Engineer in Test",
       period: "Sept 2022 – April 2023",
